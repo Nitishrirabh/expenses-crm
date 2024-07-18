@@ -80,6 +80,7 @@ class UserRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
             "message": "User deleted successfully",
             "data": UserSerializer(instance).data
         }, status=status.HTTP_200_OK)
+    
 
 class ChangePasswordView(generics.UpdateAPIView):
     serializer_class = ChangePasswordSerializer
