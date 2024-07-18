@@ -50,6 +50,7 @@ class LogoutView(APIView):
 
 class UserRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = CustomUser.objects.all()
+    
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticated]
 
