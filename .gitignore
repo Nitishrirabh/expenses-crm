@@ -1,0 +1,10 @@
+**/.env
+/media
+media
+# Ignore Python cache files
+*.log
+*.pot
+*.pyc
+*.poy
+__pycache__/
+**/__pycache__
